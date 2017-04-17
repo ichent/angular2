@@ -1,0 +1,4 @@
+<p>
+    <input type="checkbox" (change)="checkItem(itemCheckbox.checked)" [checked]="item.isRead" #itemCheckbox>
+    <span [class.is-read]="item.isRead">{{item.title}}</span>
+</p>

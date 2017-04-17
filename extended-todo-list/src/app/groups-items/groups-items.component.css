@@ -1,0 +1,16 @@
+.left {
+    float: left;
+}
+
+.sidebar {
+    width: 200px;
+}
+
+.items {
+    width: 500px;
+}
+
+.groups-input {
+    width: 100px;
+    margin-right: 5px;
+}

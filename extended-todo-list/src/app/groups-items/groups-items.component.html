@@ -1,0 +1,11 @@
+<div class="sidebar left">
+    <h2>Groups</h2>
+    <input class="groups-input" type="text" #groupName><input type="button" (click)="addGroup(groupName.value)" value="Add">
+    <group *ngFor="let group of groups$ | async" [group]="group" [selected]="group.selected" (select)="onSelectGroup($event)"></group>
+</div>
+<div class="items left">
+    <h2>Items</h2>
+    <img *ngIf="catVisible" [src]="'http://thecatapi.com/api/images/get?format=src&type=gif'">
+    <input class="groups-input" type="text" #itemName><input type="button" (click)="addItem(groupName.value, itemName.value)" value="Add">
+    <item *ngFor="let item of getItems()" [item]="item" (check)="onCheckItem($event)"></item>
+</div>
