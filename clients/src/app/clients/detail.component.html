@@ -1,0 +1,13 @@
+<div class="detail">
+    <div class="item__img">
+        <img [src]="item.general.avatar">
+    </div>
+    <div class="item__data">
+        <p><span class="head">First Name:</span> {{item.general.firstName}}</p>
+        <p><span class="head">Last Name:</span> {{item.general.lastName}}</p>
+        <br>
+        <p><span class="head">Company:</span> {{item.job.company}}</p>
+        <p><span class="head">Phone:</span> {{item.contact.phone}}</p>
+        <p><span class="head">Address:</span> {{item.address.city + ',' + item.address.street}}</p>
+    </div>
+</div>

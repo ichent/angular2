@@ -1,0 +1,16 @@
+<div *ngIf="items" class="sidebar">
+    <div class="search">
+        Search: <input type="text" (keyup)="setSearchText($event.target)">
+    </div>
+    <div *ngFor="let item of items | clientsFilter: searchText" class="item" (click)="setSelectedItem(item)" [class.selected]="item.selected">
+        <div class="item__img">
+            <img [src]="item.general.avatar">
+        </div>
+        <div class="item__data">
+            <p>{{item.general.firstName}}</p>
+            <p>{{item.general.lastName}}</p>
+        </div>
+    </div>
+</div>
+
+<detail *ngIf="selectedItem" [item]="selectedItem"></detail>

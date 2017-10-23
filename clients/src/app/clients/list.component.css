@@ -1,0 +1,38 @@
+.sidebar {
+    width: 300px;
+    margin-left: 20px;
+    margin-top: 20px;
+    height: 600px;
+    overflow-y: auto;
+    float: left;
+}
+
+.sidebar .search {
+    margin-bottom: 10px;
+}
+
+.sidebar .item {
+    height: 110px;
+    cursor: pointer;
+}
+
+.sidebar .item.selected {
+    border: 1px solid grey;
+}
+
+.sidebar .item img {
+    width: 100px;
+    height: 100px;
+}
+
+.sidebar .item .item__img {
+    float: left;
+}
+
+.sidebar .item .item__data {
+    float: left;
+}
+
+.sidebar .item .item__data p {
+    margin-left: 10px;
+}

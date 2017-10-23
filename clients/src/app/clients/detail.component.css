@@ -1,0 +1,16 @@
+.detail {
+    float: left;
+    margin: 20px;
+}
+
+.detail .item__img, .detail .item__data {
+    float: left;
+}
+
+.detail .item__data {
+    margin-left: 10px;
+}
+
+.detail .item__data .head {
+    font-weight: bold;
+}
