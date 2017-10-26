@@ -1,0 +1,9 @@
+Stat:
+<p>
+    <stat [countTotal]="countTotal" [countCorrect]="countCorrect"></stat>
+</p>
+
+<answer [items]="[{name: 'Choose', correct: false}, {name: '111', correct: true}, {name: '222', correct: false}]" (answer)="answer($event)" (create)="createAnswer()"></answer>
+
+<answer *ngFor="let i of [1,2,3,4,5]" [items]="[{name: 'Choose', correct: false}, {name: '111', correct: true}, {name: '222', correct: false}]" (answer)="answer($event)" (create)="createAnswer()"></answer>
+
